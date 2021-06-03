@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>타보리</title>
+        <!-- styles -->
+        <link rel="stylesheet" href="/css/app.css">
+        <!-- // styles -->
+        <!-- script -->
+        <script src="/js/jquery-3.5.1.min.js"></script>
+        <script src="/js/ui.min.js"></script>
+        <script src="/js/common.js"></script>
+        <!-- // script -->
+    </head>
+    <body>
+        <div class="skip-navigation">
+            <a href="#container">메뉴 건너뛰기</a>
+        </div>
+        <div id="wrap">
+            <!-- header -->
+            <header>
+                <span class="header-bg" aria-hidden="true">&nbsp;</span>
+                <div class="header-cont">
+                    <h1>
+                        <a href="/" class="logo"><img src="/images/logo.png" alt="TABORI"></a>
+                    </h1>
+                    <div class="mob-menu-wrap">
+                        <div class="other">
+                            <ul>
+                                <li><a href="/page/login.html">로그인</a></li>
+                                <li><a href="/page/mypage_01.html">마이페이지</a></li>
+                                <li><a href="/page/sitemap.html">사이트맵</a></li>
+                            </ul>
+                        </div>
+                        <nav id="gnb">
+                            <ul class="depth1">
+                                <li>
+                                    <a href="/page/sub_01_01.html" class="depth1">타보리 소개</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_01_01.html">타보리 안내</a></li>
+                                        <li><a href="/page/sub_01_02.html">이용 안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/page/sub_02_01.html" class="depth1">타보리 예약</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_02_01.html">온라인 예약</a></li>
+                                        <li><a href="/page/sub_02_02.html">타보리 예약 문의</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/page/sub_03_01.html" class="depth1">타보리 여행정보</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_03_01.html">장성</a></li>
+                                        <li><a href="/page/sub_03_02.html">보성</a></li>
+                                        <li><a href="/page/sub_03_03.html">광주</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/page/sub_04_01.html" class="depth1">홍보센터</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_04_01.html">홍보자료</a></li>
+                                        <li><a href="/page/sub_04_02.html">타보리 갤러리</a></li>
+                                        <li><a href="/page/sub_04_03.html">타보리 동영상</a></li>
+                                        <li><a href="/page/sub_04_04.html">뉴스/언론</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/page/sub_05_01.html" class="depth1">참여마당</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_05_01.html">이벤트</a></li>
+                                        <li><a href="/page/sub_05_02.html">이용후기</a></li>
+                                        <li><a href="/page/sub_05_03.html">인증샷</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/page/sub_06_01.html" class="depth1">지원센터</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_06_01.html">공지사항</a></li>
+                                        <li><a href="/page/sub_06_02.html">1:1문의</a></li>
+                                        <li><a href="/page/sub_06_03.html">자주 찾는 질문</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button type="button" class="btn-menu">
+                        <span aria-hidden="true">&nbsp;</span>
+                        <span aria-hidden="true">&nbsp;</span>
+                        <span aria-hidden="true">&nbsp;</span>
+                        <em class="blind">전체메뉴 보기</em>
+                    </button>
+                </div>
+            </header>
+            <!-- // header -->
+            <!-- container -->
+            <div id="container" class="container reservation">
+                <!-- sub visual -->
+                <div class="sub-visual cate02">
+                    <p class="eyebrow">RESERVATION</p>
+                    <h2 class="tit">타보리 예약</h2>
+                </div>
+                <!-- // sub visual -->
+                <!-- breadcrumb navigation -->
+                <nav class="breadcrumb" aria-label="breadcrumb">
+                    <ol>
+                        <li class="home"><span class="blind">HOME</span></li>
+                        <li>타보리 예약</li>
+                        <li aria-current="page">온라인 예약</li>
+                    </ol>
+                </nav>
+                <!-- // breadcrumb navigation -->
+                <!-- page title -->
+                <div class="sub-page-title">
+                    <h3 class="tit">온라인 예약</h3>
+                    <p class="desc">RESERVATION</p>
+                </div>
+                <!-- // page title -->
+                <!-- page tab -->
+                <div class="tab-wrap">
+                    <div class="dep2-scroll">
+                        <ul class="tabs">
+                            <li class='active'><a href="/page/sub_02_01.html">온라인 예약</a></li>
+                            <li><a href="/page/sub_02_02.html">타보리 예약 문의</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // page tab -->
+                <div class="tab-contents">
+                    <div class="sections">
+                        <div class="tbl-wrap">
+                            <div class="tbltit-wrap">
+                                <p class="desc">지역을 선택하시면 예약 가능한 여행지 선택이 가능합니다.</p>
+                            </div>
+                            <table class="table row-tbl">
+                                <caption>타보리 온라인 예약</caption>
+                                <colgroup>
+                                    <col class="row-col1">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">지역 선택</th>
+                                        <td>
+                                            <div class="slt-lists narrow">
+                                                <ul data-evt="radio-tab">
+                                                    <li>
+                                                        <span id="area01" class="rdo-wrap">
+                                                        <input type="radio" id="area-slt01" name="area-slt" checked>
+                                                        <label for="area-slt01">장성</label>
+                                                    </span>
+                                                    </li>
+                                                    <li>
+                                                        <span id="area02" class="rdo-wrap">
+                                                        <input type="radio" id="area-slt02" name="area-slt">
+                                                        <label for="area-slt02">보성</label>
+                                                    </span>
+                                                    </li>
+                                                    <li>
+                                                        <span id="area03" class="rdo-wrap">
+                                                        <input type="radio" id="area-slt03" name="area-slt">
+                                                        <label for="area-slt03">광주</label>
+                                                    </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">여행지 선택</th>
+                                        <td>
+                                            <div class="slt-lists narrow" data-id="area01">
+                                                <ul>
+                                                    <li>
+                                                        <span class="rdo-wrap">
+                                                        <input type="radio" id="area01-1" name="area01" checked>
+                                                        <label for="area01-1">황룡강</label>
+                                                    </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="rdo-wrap">
+                                                        <input type="radio" id="area01-2" name="area01">
+                                                        <label for="area01-2">황룡강 생태공원</label>
+                                                    </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="slt-lists narrow" data-id="area02" style="display:none;">
+                                                <ul>
+                                                    <li>
+                                                        <span class="rdo-wrap">
+                                                        <input type="radio" id="area02-1" name="area02" checked>
+                                                        <label for="area02-1">중도방죽</label>
+                                                    </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="rdo-wrap">
+                                                        <input type="radio" id="area02-2" name="area02">
+                                                        <label for="area02-2">벌교천</label>
+                                                    </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="slt-lists narrow" data-id="area03" style="display:none;">
+                                                <ul>
+                                                    <li>
+                                                        <span class="rdo-wrap">
+                                                        <input type="radio" id="area03-1" name="area03" checked>
+                                                        <label for="area03-1">펭귄마을</label>
+                                                    </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="rdo-wrap">
+                                                        <input type="radio" id="area03-2" name="area03">
+                                                        <label for="area03-2">푸른길 공원</label>
+                                                    </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">예약 구분</th>
+                                        <td>
+                                            <div class="slt-lists wide">
+                                                <ul>
+                                                    <li>
+                                                        <span class="rdo-wrap">
+                                                        <input type="radio" id="rsv-type-0" name="rsv-type">
+                                                        <label for="rsv-type-0">휠체어+타보리+안내요원</label>
+                                                    </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="rdo-wrap">
+                                                        <input type="radio" id="rsv-type-1" name="rsv-type">
+                                                        <label for="rsv-type-1">휠체어+타보리</label>
+                                                    </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="rdo-wrap">
+                                                        <input type="radio" id="rsv-type-2" name="rsv-type">
+                                                        <label for="rsv-type-2">휠체어</label>
+                                                    </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- <tr>
+                                    <th scope="row">예약일 선택</th>
+                                    <td>
+                                        <div class="datepicker-wrap">
+                                            <span class="input-wrap">
+                                                <input type="text" class="datepicker-here" data-language="ko" readonly>
+                                            </span>
+                                            <button type="button" class="btn-cal"><span class="blind">날짜 선택</span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">예약시간 선택</th>
+                                    <td>
+                                        <div class="rsv-time-select">
+                                            <div class="morning">
+                                                <p class="time">오전</p>
+                                                <div class="slt-lists narrow">
+                                                    <ul>
+                                                        <li>
+                                                            <span class="chk-wrap">
+                                                                <input type="checkbox" id="time-morning-0" name="time-morning">
+                                                                <label for="time-morning-0">10:00~11:00<span>(신청가능<em>10</em>대)</span></label>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="chk-wrap">
+                                                                <input type="checkbox" id="time-morning-1" name="time-morning">
+                                                                <label for="time-morning-1">11:00~12:00<span>(신청가능<em>10</em>대)</span></label>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="noon">
+                                                <p class="time">오후</p>
+                                                <div class="slt-lists narrow">
+                                                    <ul>
+                                                        <li>
+                                                            <span class="chk-wrap">
+                                                                <input type="checkbox" id="time-noon-0" name="time-noon">
+                                                                <label for="time-noon-0">13:00~14:00<span>(신청가능<em>10</em>대)</span></label>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="chk-wrap">
+                                                                <input type="checkbox" id="time-noon-1" name="time-noon">
+                                                                <label for="time-noon-1">14:00~15:00<span>(신청가능<em>10</em>대)</span></label>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="chk-wrap">
+                                                                <input type="checkbox" id="time-noon-2" name="time-noon">
+                                                                <label for="time-noon-2">15:00~16:00<span>(신청가능<em>10</em>대)</span></label>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="chk-wrap">
+                                                                <input type="checkbox" id="time-noon-3" name="time-noon">
+                                                                <label for="time-noon-3">16:00~17:00<span>(신청가능<em>10</em>대)</span></label>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 달력 // 날짜선택 -->
+                        <!-- <p class="reservation-tit">예약 가능한 날짜를 선택하신 후, 예약시간을 선택해주세요.</p> -->
+                        <div class="select-more">
+                            <div class="calendar-wrap">
+                                <div class="cal-head">
+                                    <div class="month-info">
+                                        <p class="now"><span class="blind">현재 노출된 달력 년월</span>2021. 03</p>
+                                    </div>
+                                    <div class="month-btns">
+                                        <button type="button" class="btn-prev"><span class="blind">이전달</span></button>
+                                        <button type="button" class="btn-next"><span class="blind">다음달</span></button>
+                                    </div>
+                                </div>
+                                <div class="table-scroll">
+                                    <table class="cal-tbl">
+                                        <caption>예약날짜를 선택하는 달력</caption>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">일</th>
+                                                <th scope="col">월</th>
+                                                <th scope="col">화</th>
+                                                <th scope="col">수</th>
+                                                <th scope="col">목</th>
+                                                <th scope="col">금</th>
+                                                <th scope="col">토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="prev">
+                                                    <!-- 오늘 이전 .prev -->
+                                                    <span class="date">28</span>
+                                                </td>
+                                                <td class="prev"><span class="date">1</span><button type="button" class="btn-select" disabled><span>불가</span></button></td>
+                                                <td class="prev"><span class="date">2</span><button type="button" class="btn-select" disabled><span>불가</span></button></td>
+                                                <td class="prev"><span class="date">3</span><button type="button" class="btn-select" disabled><span>불가</span></button></td>
+                                                <td class="prev"><span class="date">4</span><button type="button" class="btn-select" disabled><span>불가</span></button></td>
+                                                <td class="prev"><span class="date">5</span><button type="button" class="btn-select" disabled><span>불가</span></button></td>
+                                                <td class="prev"><span class="date">6</span><button type="button" class="btn-select" disabled><span>불가</span></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="prev"><span class="date">7</span><button type="button" class="btn-select" disabled><span>불가</span></button></td>
+                                                <td class="prev"><span class="date">8</span><button type="button" class="btn-select" disabled><span>불가</span></button></td>
+                                                <td class="today">
+                                                    <span class="date">9</span>
+                                                    <button type="button" class="btn-select"><span>가능</span></button>
+                                                    <p class="info">잔여 : <em>20</em>대</p>
+                                                </td><!-- 오늘 .today -->
+                                                <td>
+                                                    <span class="date">10</span>
+                                                    <button type="button" class="btn-select"><span>가능</span></button>
+                                                    <p class="info">잔여 : <em>20</em>대</p>
+                                                </td>
+                                                <td><span class="date">11</span><button type="button" class="btn-select" disabled><span>불가</span></button></td>
+                                                <td>
+                                                    <span class="date">12</span>
+                                                    <button type="button" class="btn-select"><span>가능</span></button>
+                                                    <p class="info">잔여 : <em>20</em>대</p>
+                                                </td>
+                                                <td><span class="date">13</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="date">14</span><button type="button" class="btn-select" disabled><span>불가</span></button></td>
+                                                <td><span class="date">15</span></td>
+                                                <td><span class="date">16</span></td>
+                                                <td><span class="date">17</span></td>
+                                                <td><span class="date">18</span></td>
+                                                <td><span class="date">19</span></td>
+                                                <td><span class="date">20</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="date">21</span></td>
+                                                <td><span class="date">22</span></td>
+                                                <td><span class="date">23</span></td>
+                                                <td><span class="date">24</span></td>
+                                                <td><span class="date">25</span></td>
+                                                <td><span class="date">26</span></td>
+                                                <td><span class="date">27</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="date">28</span></td>
+                                                <td><span class="date">29</span></td>
+                                                <td><span class="date">30</span></td>
+                                                <td><span class="date">31</span></td>
+                                                <td class="next"><span class="date">1</span></td><!-- 다음달 .next -->
+                                                <td class="next"><span class="date">2</span></td>
+                                                <td class="next"><span class="date">3</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="time-list">
+                                <p class="title">예약시간 선택</p>
+                                <ul class="lists">
+                                    <li>
+                                        <span class="chk-wrap">
+                                        <input type="checkbox" id="chk-time01" name="chk-time" disabled>
+                                        <label for="chk-time01">10:00 ~ 11:00<span>(신청가능 <em>0</em>대)</span></label>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="chk-wrap">
+                                        <input type="checkbox" id="chk-time02" name="chk-time">
+                                        <label for="chk-time02">11:00 ~ 12:00<span>(신청가능 <em>5</em>대)</span></label>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="chk-wrap">
+                                        <input type="checkbox" id="chk-time03" name="chk-time">
+                                        <label for="chk-time03">12:00 ~ 13:00<span>(신청가능 <em>5</em>대)</span></label>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="chk-wrap">
+                                        <input type="checkbox" id="chk-time04" name="chk-time">
+                                        <label for="chk-time04">13:00 ~ 14:00<span>(신청가능 <em>5</em>대)</span></label>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="chk-wrap">
+                                        <input type="checkbox" id="chk-time05" name="chk-time" disabled>
+                                        <label for="chk-time05">14:00 ~ 15:00<span>(신청가능 <em>0</em>대)</span></label>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- // 달력 // 날짜선택 -->
+                        <div class="btn-wrap">
+                            <button type="submit" class="btn black submit"><span>타보리 예약하기</span></button>
+                        </div>
+                        <div class="tit-cont-box">
+                            <h4 class="tit">선착순 예약정책</h4>
+                            <div class="cont">
+                                <p class="bold">선착순 방식으로 예약 신청할 경우</p>
+                                <p>
+                                    온라인 예약 메뉴에서 이용일, 시간, 이용구분하여 선택해 예약 신청을 합니다.<br>
+                                    예약은 1일 기준 최대 2시간입니다.<br>
+                                    예약 당일은 취소가 불가하며, 2일 이내에 예약해 주세요!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // container -->
+            <!-- footer -->
+            <footer>
+                <div class="footer-cont">
+                    <div class="info-us-wrap">
+                        <div class="boxs">
+                            <p class="tit">ABOUT US</p>
+                            <ul class="info">
+                                <li>타보리 이용문의 : <span>평일 10:00~17:00</span><span>- 점심시간 12:00~13:00</span></li>
+                                <li><a href="#n">이용약관</a></li>
+                                <li><a href="#n">개인정보처리방침</a></li>
+                            </ul>
+                            <div class="dropdown ui-dropdown">
+                                <button type="button" class="btn-toggle">관련사이트 바로가기</button>
+                                <ul class="lists">
+                                    <li><a href="#n" target="_blank">보성군노인복지관</a></li>
+                                    <li><a href="#n" target="_blank">보성군노인복지관</a></li>
+                                    <li><a href="#n" target="_blank">보성군노인복지관</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="boxs">
+                            <p class="tit">CONTACT US</p>
+                            <p class="my">사회복지법인 우성나눔재단</p>
+                            <p class="address">
+                                <span>광주광역시 서구 월드컵4강로 198번길11(내방동)</span>
+                                <span>Tel 061-858-8900</span>
+                                <span>Fax 061-858-8901</span>
+                            </p>
+                            <p class="copy">Copyright Ⓒ 2012 우성나눔재단. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- quick menu(index 제외 모든 화면에 추가) -->
+            <div id="quick-menu">
+                <ul class="menus">
+                    <li><a href="/page/mypage_01.html" class="link01">마이페이지</a></li>
+                    <li><a href="#n" class="link02">온라인교육</a></li>
+                    <li><a href="/page/sub_06_03.html" class="link03">문의안내</a></li>
+                    <li><a href="/page/sub_06_01.html" class="link04">공지사항</a></li>
+                    <li><a href="/page/sub_06_02.html" class="link05">1:1문의</a></li>
+                </ul>
+                <a href="#wrap" class="totop"><span class="blind">화면 상단으로 이동</span></a>
+            </div>
+            <!-- //quick menu(index 제외 모든 화면에 추가) -->
+            <!-- // footer -->
+        </div>
+    </body>
+</html>

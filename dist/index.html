@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>타보리</title>
+        <!-- styles -->
+        <link rel="stylesheet" href="/css/app.css">
+        <!-- // styles -->
+        <!-- script -->
+        <script src="/js/jquery-3.5.1.min.js"></script>
+        <script src="/js/ui.min.js"></script>
+        <script src="/js/common.js"></script>
+        <!-- // script -->
+    </head>
+    <body>
+        <div class="skip-navigation">
+            <a href="#container">메뉴 건너뛰기</a>
+        </div>
+        <div id="top-banner">
+            <div class="top-banner-wrap swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#n">
+                            <!-- pc/mob img 따로 호출 -->
+                            <span class="pc">
+                            <img src="/images/@topbanner.jpg" alt="배너 이미지의 대략적인 내용 들어감">
+                        </span>
+                            <span class="mob">
+                            <img src="/images/@topbanner-m.jpg" alt="배너 이미지의 대략적인 내용 들어감">
+                        </span>
+                            <!-- pc/mob img 따로 호출 -->
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#n">
+                            <!-- pc/mob img 따로 호출 -->
+                            <span class="pc">
+                            <img src="/images/@topbanner.jpg" alt="배너 이미지의 대략적인 내용 들어감">
+                        </span>
+                            <span class="mob">
+                            <img src="/images/@topbanner-m.jpg" alt="배너 이미지의 대략적인 내용 들어감">
+                        </span>
+                            <!-- pc/mob img 따로 호출 -->
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#n">
+                            <!-- pc/mob img 따로 호출 -->
+                            <span class="pc">
+                            <img src="/images/@topbanner.jpg" alt="배너 이미지의 대략적인 내용 들어감">
+                        </span>
+                            <span class="mob">
+                            <img src="/images/@topbanner-m.jpg" alt="배너 이미지의 대략적인 내용 들어감">
+                        </span>
+                            <!-- pc/mob img 따로 호출 -->
+                        </a>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <button type="button" class="btn-close"><span class="blind">닫기</span></button>
+            <script>
+                $(function() {
+                    var swiper = new Swiper('.top-banner-wrap.swiper-container', {
+                        autoplay: {
+                            delay: 5000,
+                        },
+                        loop: true,
+                        slidesPerView: 1,
+                        navigation: {
+                            nextEl: '.top-banner-wrap .swiper-button-next',
+                            prevEl: '.top-banner-wrap .swiper-button-prev'
+                        },
+                    })
+                    $('#top-banner .btn-close').click(function() {
+                        $('#top-banner').slideUp();
+                    });
+                });
+            </script>
+        </div>
+        <div id="wrap">
+            <!-- header -->
+            <header>
+                <span class="header-bg" aria-hidden="true">&nbsp;</span>
+                <div class="header-cont">
+                    <h1>
+                        <a href="/" class="logo"><img src="/images/logo.png" alt="TABORI"></a>
+                    </h1>
+                    <div class="mob-menu-wrap">
+                        <div class="other">
+                            <ul>
+                                <li><a href="/page/login.html">로그인</a></li>
+                                <li><a href="/page/mypage_01.html">마이페이지</a></li>
+                                <li><a href="/page/sitemap.html">사이트맵</a></li>
+                            </ul>
+                        </div>
+                        <nav id="gnb">
+                            <ul class="depth1">
+                                <li>
+                                    <a href="/page/sub_01_01.html" class="depth1">타보리 소개</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_01_01.html">타보리 안내</a></li>
+                                        <li><a href="/page/sub_01_02.html">이용 안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/page/sub_02_01.html" class="depth1">타보리 예약</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_02_01.html">온라인 예약</a></li>
+                                        <li><a href="/page/sub_02_02.html">타보리 예약 문의</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/page/sub_03_01.html" class="depth1">타보리 여행정보</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_03_01.html">장성</a></li>
+                                        <li><a href="/page/sub_03_02.html">보성</a></li>
+                                        <li><a href="/page/sub_03_03.html">광주</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/page/sub_04_01.html" class="depth1">홍보센터</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_04_01.html">홍보자료</a></li>
+                                        <li><a href="/page/sub_04_02.html">타보리 갤러리</a></li>
+                                        <li><a href="/page/sub_04_03.html">타보리 동영상</a></li>
+                                        <li><a href="/page/sub_04_04.html">뉴스/언론</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/page/sub_05_01.html" class="depth1">참여마당</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_05_01.html">이벤트</a></li>
+                                        <li><a href="/page/sub_05_02.html">이용후기</a></li>
+                                        <li><a href="/page/sub_05_03.html">인증샷</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/page/sub_06_01.html" class="depth1">지원센터</a>
+                                    <span class="more-depth"><em class="blind">메뉴 더보기</em></span>
+                                    <ul class="depth2 sub-depth">
+                                        <li><a href="/page/sub_06_01.html">공지사항</a></li>
+                                        <li><a href="/page/sub_06_02.html">1:1문의</a></li>
+                                        <li><a href="/page/sub_06_03.html">자주 찾는 질문</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button type="button" class="btn-menu">
+                        <span aria-hidden="true">&nbsp;</span>
+                        <span aria-hidden="true">&nbsp;</span>
+                        <span aria-hidden="true">&nbsp;</span>
+                        <em class="blind">전체메뉴 보기</em>
+                    </button>
+                </div>
+            </header>
+            <!-- // header -->
+            <!-- container -->
+            <div id="container" class="container main">
+                <!-- main visual -->
+                <div class="main-visual swiper-container">
+                    <!-- img background slide -->
+                    <div class="swiper-wrapper" aria-hidden="true">
+                        <div class="swiper-slide">
+                            <!-- 등록한 이미지 pc/mob 나눠서 호출 -->
+                            <span class="bg-img pc" style="background-image:url('/images/img-visual01.jpg');" aria-hidden="true">&nbsp;</span>
+                            <span class="bg-img mob" style="background-image:url('/images/img-visual01-m.jpg');" aria-hidden="true">&nbsp;</span>
+                            <!-- // 등록한 이미지 pc/mob 나눠서 호출 -->
+                            <div class="text-overlay">
+                                <p class="tit">
+                                    <span class="txt">2021 타보리 무장애여행시스템</span>
+                                    <span class="bar" aria-hidden="true">&nbsp;</span>
+                                </p>
+                                <p class="desc">가장 안전하고 안락한 여행이 될 수 있도록 모든 노력을 기울이겠습니다.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- 등록한 이미지 pc/mob 나눠서 호출 -->
+                            <span class="bg-img pc" style="background-image:url('/images/img-visual01.jpg');" aria-hidden="true">&nbsp;</span>
+                            <span class="bg-img mob" style="background-image:url('/images/img-visual01-m.jpg');" aria-hidden="true">&nbsp;</span>
+                            <!-- // 등록한 이미지 pc/mob 나눠서 호출 -->
+                            <div class="text-overlay">
+                                <p class="tit">
+                                    <span class="txt">2021 타보리 무장애여행시스템</span>
+                                    <span class="bar" aria-hidden="true">&nbsp;</span>
+                                </p>
+                                <p class="desc">가장 안전하고 안락한 여행이 될 수 있도록 모든 노력을 기울이겠습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // img background slide -->
+                    <!-- slide controller -->
+                    <div class="swiper-controller">
+                        <div class="swiper-prev"><span class="blind">PREV</span></div>
+                        <div class="swiper-next"><span class="blind">NEXT</span></div>
+                        <div class="swiper-paging"></div>
+                    </div>
+                    <!-- // slide controller -->
+                </div>
+                <!-- // main visual -->
+                <!-- section1 -->
+                <div class="section01">
+                    <div class="tit-wrap">
+                        <h3 class="tit">TABORI 이용</h3>
+                        <p class="desc">당신이 꿈꾸는 여행의 모든 것 무장애여행시스템이 특별히 준비한 이야기를 보세요</p>
+                    </div>
+                    <ul class="icon-list">
+                        <li>
+                            <a href="/page/sub_01_02.html" class="link01">
+                                <p class="tit">타보리 이용안내</p>
+                                <p class="desc">
+                                    <span>타보리 이용에 대하여</span>
+                                    <span>안내합니다.</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/page/sub_02_01.html" class="link02">
+                                <p class="tit">온라인 예약안내</p>
+                                <p class="desc">
+                                    <span>타보리 온라인 예약을 안내하며,</span>
+                                    <span>온라인 예약 및 결제를 진행합니다.</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/page/sub_05_02.html" class="link03">
+                                <p class="tit">이용후기</p>
+                                <p class="desc">
+                                    <span>타보리 및 여행지 이용후기를</span>
+                                    <span>작성하실 수 있습니다.</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/page/sub_05_03.html" class="link04">
+                                <p class="tit">인증샷</p>
+                                <p class="desc">
+                                    <span>타보리 및 여행지 인증샷을</span>
+                                    <span>작성하실 수 있습니다.</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // section1 -->
+                <!-- section02 -->
+                <div class="section02">
+                    <div class="area">
+                        <div class="tit-wrap">
+                            <p class="eyebrow">TABORI</p>
+                            <p class="tit">여행지소개</p>
+                            <p class="desc">가장 안전하고 안락한 여행이 될 수 있도록 모든 노력을 기울이겠습니다.</p>
+                        </div>
+                        <div class="img-layout-wrap">
+                            <ul>
+                                <li>
+                                    <a href="/page/sub_03_01_02.html">
+                                        <img src="/images/img-view01.jpg" alt="">
+                                        <div class="overlay">
+                                            <p>
+                                                <small>Travel 01</small>
+                                                장성 황룡강 생태공원
+                                                <span>자세히 보기</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <img src="/images/img-view02.jpg" alt="">
+                                        <div class="overlay">
+                                            <p>
+                                                <small>Travel 02</small>
+                                                장성 황룡강 생태공원
+                                                <span>자세히 보기</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <img src="/images/img-view03.jpg" alt="">
+                                        <div class="overlay">
+                                            <p>
+                                                <small>Travel 03</small>
+                                                보성 중도방죽
+                                                <span>자세히 보기</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <img src="/images/img-view04.jpg" alt="">
+                                        <div class="overlay">
+                                            <p>
+                                                <small>Travel 04</small>
+                                                장성 황룡강 생태공원
+                                                <span>자세히 보기</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <img src="/images/img-view05.jpg" alt="">
+                                        <div class="overlay">
+                                            <p>
+                                                <small>Travel 05</small>
+                                                장성 황룡강 생태공원
+                                                <span>자세히 보기</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <img src="/images/img-view06.jpg" alt="">
+                                        <div class="overlay">
+                                            <p>
+                                                <small>Travel 06</small>
+                                                광주 펭귄마을
+                                                <span>자세히 보기</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- // section02 -->
+                <!-- section03 -->
+                <div class="section03">
+                    <div class="preview-lists">
+                        <div class="boxs">
+                            <p class="category">NEWS</p>
+                            <a href="/page/sub_04_04_view.html" title="해당 글 전체보기로 이동">
+                                <p class="tit"><span class="blind">제목</span>2021 타보리 예약관리시스템 운영 안내</p>
+                                <p class="desc"><span class="blind">내용</span>타보리 회원 여러분, 코로나19와 함께 지냈던 2020년을 뒤로하고 시스템 운영 안내해드리겠습니다.</p>
+                                <p class="date"><span class="blind">등록일</span>2021.02.03</p>
+                            </a>
+                        </div>
+                        <div class="boxs">
+                            <p class="category">자주찾는 질문</p>
+                            <a href="/page/sub_06_03.html" title="해당 글 전체보기로 이동">
+                                <p class="tit"><span class="blind">제목</span>예약하려면 어떻게 해야하나요?</p>
+                                <p class="desc"><span class="blind">내용</span>타보리 회원 여러분, 코로나19와 함께 지냈던 2020년을 뒤로하고 시스템 운영 안내해드리겠습니다.</p>
+                                <p class="date"><span class="blind">등록일</span>2021.02.03</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-wrap">
+                        <a href="#n">
+                            <img src="/images/img-banner01.jpg" alt="타보리 오픈 이벤트 안내">
+                        </a>
+                    </div>
+                </div>
+                <!-- // section03 -->
+                <!-- section04 -->
+                <div class="section04">
+                    <div class="area">
+                        <div class="ci-slider swiper-container">
+                            <div class="swiper-wrapper" aria-hidden="true">
+                                <div class="swiper-slide">
+                                    <img src="/images/ci/ci01.jpg" alt="보성군노인복지관">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/ci/ci02.jpg" alt="장성군청">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/ci/ci03.jpg" alt="광주시청">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/ci/ci04.jpg" alt="오매광주">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/ci/ci01.jpg" alt="보성군노인복지관">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/ci/ci02.jpg" alt="장성군청">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/ci/ci03.jpg" alt="광주시청">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/ci/ci04.jpg" alt="오매광주">
+                                </div>
+                            </div>
+                            <!-- slide controller -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <!-- // slide controller -->
+                        </div>
+                    </div>
+                </div>
+                <!-- // section04 -->
+            </div>
+            <!-- // container -->
+            <!-- footer -->
+            <footer>
+                <div class="footer-cont">
+                    <div class="info-us-wrap">
+                        <div class="boxs">
+                            <p class="tit">ABOUT US</p>
+                            <ul class="info">
+                                <li>타보리 이용문의 : <span>평일 10:00~17:00</span><span>- 점심시간 12:00~13:00</span></li>
+                                <li><a href="#n">이용약관</a></li>
+                                <li><a href="#n">개인정보처리방침</a></li>
+                            </ul>
+                            <div class="dropdown ui-dropdown">
+                                <button type="button" class="btn-toggle">관련사이트 바로가기</button>
+                                <ul class="lists">
+                                    <li><a href="#n" target="_blank">보성군노인복지관</a></li>
+                                    <li><a href="#n" target="_blank">보성군노인복지관</a></li>
+                                    <li><a href="#n" target="_blank">보성군노인복지관</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="boxs">
+                            <p class="tit">CONTACT US</p>
+                            <p class="my">사회복지법인 우성나눔재단</p>
+                            <p class="address">
+                                <span>광주광역시 서구 월드컵4강로 198번길11(내방동)</span>
+                                <span>Tel 061-858-8900</span>
+                                <span>Fax 061-858-8901</span>
+                            </p>
+                            <p class="copy">Copyright Ⓒ 2012 우성나눔재단. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- // footer -->
+        </div>
+        <script>
+            var swiper = new Swiper('.main-visual.swiper-container', {
+                autoplay: {
+                    delay: 5000,
+                },
+                loop: true,
+                slidesPerView: 1,
+                pagination: {
+                    el: '.swiper-paging',
+                    type: 'fraction'
+                },
+                navigation: {
+                    nextEl: '.swiper-next',
+                    prevEl: '.swiper-prev'
+                },
+            })
+            var ciSwiper = new Swiper('.ci-slider.swiper-container', {
+                slidesPerView: 2,
+                spaceBetween: 5,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                breakpoints: {
+                    481: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
